@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "score": 0,
+  "clicks": 0,
+  "cpc": 1,
+  "cps": 0,
+  "upgrades": {
+    "finger": 0,
+    "auto": 0,
+    "reactor": 0
+  },
+  "eggs": {
+    "common": 0,
+    "rare": 0,
+    "legendary": 0
+  },
+  "eggProgress": 0,
+  "stacks": 0,
+  "stackCount": 0,
+  "playSeconds": 0,
+  "bestClick": 0,
+  "theme": "default",
+  "mode": "normal",
+  "usedCodes": [],
+  "audio": {
+    "master": 80,
+    "bgm": 45,
+    "sfx": 75,
+    "track": "synthwave",
+    "musicOn": false
+  }
+}

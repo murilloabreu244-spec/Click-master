@@ -1,0 +1,13 @@
+CLICK MASTER — CONFIGURAR RANKING ONLINE
+
+1. Abra seu projeto Supabase: https://supabase.com/dashboard/project/xrrigmgpijxookimtapv
+2. No Authentication, habilite Anonymous Sign-Ins (login anônimo).
+3. Abra SQL Editor, crie uma query, cole o conteúdo de supabase/setup.sql e execute.
+4. Em Project Settings > API Keys, copie a chave Publishable (pública).
+5. Abra js/supabase-config.js e substitua COLE_AQUI_SUA_SUPABASE_PUBLISHABLE_KEY pela chave. Mantenha a URL do projeto.
+6. Hospede o jogo em HTTPS ou rode por um servidor local; abrir index.html via file:// pode impedir recursos.
+7. Abra o jogo, digite um nome e clique em Conectar.
+
+SEGURANÇA: nunca coloque service_role ou secret key no jogo. Esta integração cliente é um protótipo funcional de ranking e não impede trapaças: usuários podem adulterar score no navegador. Para ranking competitivo/antifraude, valide partidas e pontuações em Edge Functions/servidor. Não use pontuação local importada como prova de resultado legítimo.
+
+Preserva o save local e a pasta LOG. O ranking é uma funcionalidade adicional.

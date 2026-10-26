@@ -1,0 +1,7 @@
+{
+  "resolution": "responsive",
+  "target_fps": 60,
+  "reduced_motion_respected": true,
+  "visual_effects": true,
+  "vsync": "browser-managed"
+}

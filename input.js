@@ -1,0 +1,2 @@
+/* Entradas de teclado e controles acessíveis. */
+(function(){'use strict';window.GameInput={init(onClick){document.addEventListener('keydown',e=>{if(e.code!=='Space'||e.repeat)return;const el=document.activeElement;if(el&&(['INPUT','TEXTAREA','SELECT','BUTTON'].includes(el.tagName)||el.isContentEditable))return;e.preventDefault();onClick()});const btn=document.getElementById('main-click-btn');if(btn)btn.addEventListener('click',onClick)}}})();

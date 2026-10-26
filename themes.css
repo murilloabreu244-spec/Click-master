@@ -1,0 +1,6 @@
+/* Temas oficiais do Click Master: cada classe atualiza a paleta completa. */
+.theme-default{--bg:#070b17;--surface:#10182b;--surface2:#151f37;--accent:#45e9ff;--accent2:#9265ff;--line:#293655}
+.theme-cyberpunk{--bg:#040b0d;--surface:#0b1719;--surface2:#102427;--accent:#00ffd0;--accent2:#f000ff;--line:#1c4845;background-image:radial-gradient(ellipse at 50% -18%,#075a4d 0,transparent 48%),linear-gradient(#040b0d,#040b0d)}
+.theme-dark-gold{--bg:#100d09;--surface:#211a10;--surface2:#302414;--accent:#ffd166;--accent2:#d88b2f;--line:#5a4526;background-image:radial-gradient(ellipse at 50% -18%,#65451d 0,transparent 48%),linear-gradient(#100d09,#100d09)}
+.theme-choco{--bg:#21140f;--surface:#352119;--surface2:#472c1d;--accent:#ffcf8b;--accent2:#a85e35;--line:#68432c;background-image:radial-gradient(ellipse at 50% -18%,#633b25 0,transparent 48%),linear-gradient(#21140f,#21140f)}
+.theme-inferno{--bg:#180707;--surface:#2a0e12;--surface2:#3b1117;--accent:#ff5a36;--accent2:#ffbd35;--line:#68242a;background-image:radial-gradient(ellipse at 50% -18%,#77201a 0,transparent 48%),linear-gradient(#180707,#180707)}

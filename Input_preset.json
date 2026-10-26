@@ -1,0 +1,8 @@
+{
+  "click_key": "Space",
+  "prevent_when_typing": true,
+  "mode_options": [
+    "normal",
+    "hardcore"
+  ]
+}

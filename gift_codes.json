@@ -1,0 +1,13 @@
+{
+  "codes": [
+    "MASTER2026",
+    "QA_TOP1",
+    "STACKS_EVENT"
+  ],
+  "rewards": {
+    "MASTER2026": 5000,
+    "QA_TOP1": 25000,
+    "STACKS_EVENT": 10000
+  },
+  "note": "Códigos de demonstração locais. Para códigos secretos, validar no servidor."
+}
