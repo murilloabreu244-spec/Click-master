@@ -11,3 +11,11 @@ CLICK MASTER — CONFIGURAR RANKING ONLINE
 SEGURANÇA: nunca coloque service_role ou secret key no jogo. Esta integração cliente é um protótipo funcional de ranking e não impede trapaças: usuários podem adulterar score no navegador. Para ranking competitivo/antifraude, valide partidas e pontuações em Edge Functions/servidor. Não use pontuação local importada como prova de resultado legítimo.
 
 Preserva o save local e a pasta LOG. O ranking é uma funcionalidade adicional.
+
+
+ATUALIZAÇÃO v1.3
+- Adicionados ovos básicos e premium, coleção de pets e até 3 pets equipados.
+- Pets concedem multiplicadores de pontos; gemas são obtidas a cada 100 cliques (5 gemas).
+- Loja com boost temporário de sorte e multiplicador permanente.
+- Elo local por pontuação: Bronze, Prata, Ouro, Diamante e Supremo.
+- A expansão salva os dados separadamente no armazenamento local, preservando o save existente.

@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#080d1c"><meta name="description" content="Click Master — evolua seu núcleo, desbloqueie melhorias e dispute o ranking global online.">
-<title>Click Master v1.2</title><link rel="manifest" href="manifest.json">
+<title>Click Master v1.4.0</title><link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="css/main.css"><link rel="stylesheet" href="css/themes.css"><link rel="stylesheet" href="css/animations.css">
 </head>
 <body class="theme-default">
 <div id="app" class="app-shell">
-<header class="game-header"><div class="brand"><div class="brand-icon" aria-hidden="true">✦</div><div><p class="eyebrow">IDLE CLICKER EXPERIENCE</p><h1>Click Master <span class="version-tag">v1.2</span></h1></div></div><div class="community-info"><span class="status-dot"></span><span id="connection-mode">Modo local</span><span class="divider-dot">•</span><span>Ranking: <strong id="player-rank">—</strong></span></div></header>
+<header class="game-header"><div class="brand"><div class="brand-icon" aria-hidden="true">✦</div><div><p class="eyebrow">IDLE CLICKER EXPERIENCE</p><h1>Click Master <span class="version-tag">v1.4.0</span></h1></div></div><div class="community-info"><span class="status-dot"></span><span id="connection-mode">Modo local</span><span class="divider-dot">•</span><span>Ranking: <strong id="player-rank">—</strong></span></div></header>
 <main class="game-container">
 <section class="stats-panel" aria-label="Estatísticas principais"><div class="stat-box"><span class="label">Pontos totais</span><strong id="score-display" class="value">0</strong></div><div class="stat-box"><span class="label">Pontos por clique</span><strong id="cpc-display" class="value">1</strong></div><div class="stat-box"><span class="label">Pontos por segundo</span><strong id="cps-display" class="value">0</strong></div></section>
 <div class="main-grid"><div class="main-column">
@@ -27,12 +27,25 @@
 <div class="leaderboard-connect"><label class="field-label" for="leaderboard-name">Seu nome no ranking</label><div class="code-input-group"><input id="leaderboard-name" class="field-control" type="text" maxlength="20" placeholder="Digite seu nome" autocomplete="nickname"><button id="leaderboard-connect" class="primary-button" type="button">Conectar</button></div><p id="leaderboard-status" class="muted small" role="status">Configure o Supabase para ativar o ranking online.</p></div>
 <ol id="leaderboard-list" class="leaderboard-list"><li class="empty-state">O ranking aparecerá aqui quando conectado.</li></ol>
 </section>
+
+<section class="panel expansion-panel">
+<div class="section-heading"><div><p class="eyebrow">EVOLUÇÃO AVANÇADA</p><h2>🥚 Ovos, Pets & Gemas</h2></div><span class="mini-pill">v1.4.0</span></div>
+<div class="stats-panel expansion-wallet"><div class="stat-box gem-wallet-box"><span class="label">💎 Suas gemas</span><strong id="gems-display" class="value">0</strong><span class="small muted">Saldo disponível</span></div><div class="stat-box"><span class="label">Pets equipados</span><strong id="pets-equipped">0/3</strong></div><div class="stat-box"><span class="label">Multiplicador de pets</span><strong id="pet-multiplier">×1</strong></div></div>
+<div class="exp-grid">
+<div class="exp-card"><h3>🥚 Chocar ovo básico</h3><p>Receba um pet aleatório. Pets raros concedem multiplicadores melhores.</p><button id="open-egg" class="primary-button full-width">Chocar · 500 pontos</button><button id="open-gem-egg" class="full-width">Ovo premium · 10 gemas</button><p id="egg-result" class="muted small" aria-live="polite">Nenhum ovo chocado ainda.</p></div>
+<div class="exp-card"><h3>🐾 Sua coleção</h3><div id="pet-collection" class="pet-collection"><p class="muted small">Choque um ovo para encontrar pets.</p></div></div>
+<div class="exp-card"><h3>💎 Loja de gemas</h3><p>Gemas gratuitas de demonstração: ganhe 5 a cada 100 cliques. Use-as para boosts temporários.</p><button id="buy-luck" class="full-width">Sorte ×2 por 60s · 5 gemas</button><button id="buy-permanent" class="full-width">Multiplicador permanente +10% · 25 gemas</button><p id="gem-message" class="muted small" aria-live="polite"></p></div>
+</div>
+<div class="section-heading expansion-subhead"><div><p class="eyebrow">COMPETITIVO</p><h2>🏅 Elo do jogador</h2></div></div>
+<div class="elo-row"><strong id="elo-name">Bronze</strong><span id="elo-description" class="muted small">Continue clicando para subir de elo.</span></div>
+</section>
+
 <section class="panel log-panel"><div class="section-heading"><div><p class="eyebrow">SISTEMA</p><h2>Registro recente</h2></div><span class="mini-pill">LOG</span></div><div id="recent-log" class="recent-log" aria-live="polite"><p class="muted">Inicializando...</p></div></section>
 </aside></div>
-</main><footer class="footer">Click Master · Salvamento automático neste dispositivo · Ranking global via Supabase</footer>
+</main><footer class="footer">Click Master v1.4.0 · Salvamento automático neste dispositivo · Ranking global via Supabase</footer>
 </div><div id="toast" class="toast" role="status" aria-live="polite"></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
 <script src="js/supabase-config.js" defer></script>
 <script src="js/leaderboard.js" defer></script>
-<script src="js/logger.js" defer></script><script src="js/storage.js" defer></script><script src="js/integrity.js" defer></script><script src="js/stats.js" defer></script><script src="js/input.js" defer></script><script src="js/graphics.js" defer></script><script src="js/audio.js" defer></script><script src="js/script_loader.js" defer></script><script src="js/core.js" defer></script>
+<script src="js/logger.js" defer></script><script src="js/storage.js" defer></script><script src="js/integrity.js" defer></script><script src="js/stats.js" defer></script><script src="js/input.js" defer></script><script src="js/graphics.js" defer></script><script src="js/audio.js" defer></script><script src="js/script_loader.js" defer></script><script src="js/core.js" defer></script><script src="js/expansion.js" defer></script>
 </body></html>

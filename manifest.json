@@ -1,8 +1,8 @@
 {
-  "name": "Click Master",
+  "name": "Click Master v1.4.0",
   "short_name": "Click Master",
-  "version": "1.2",
-  "description": "Clicker game with upgrades, themes, audio, stats and local saves",
+  "version": "1.4.0",
+  "description": "Clicker game with upgrades, eggs, collectible pets, gems, temporary boosts, themes, audio, stats and online leaderboard",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#070b17",
@@ -30,6 +30,7 @@
     "LOG/.gitkeep",
     "js/supabase-config.js",
     "js/leaderboard.js",
-    "supabase/setup.sql"
+    "supabase/setup.sql",
+    "js/expansion.js"
   ]
 }

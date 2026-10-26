@@ -3,3 +3,42 @@
 
 /* Ranking online Supabase */
 .leaderboard-panel .section-heading{display:flex;align-items:center;justify-content:space-between;gap:10px}.leaderboard-panel .section-heading button{font-size:10px;padding:8px 10px}.leaderboard-connect{margin-bottom:14px}.leaderboard-list{list-style:none;margin:0;padding:0;display:grid;gap:7px;max-height:320px;overflow:auto}.leaderboard-row{display:grid;grid-template-columns:34px minmax(0,1fr) auto;align-items:center;gap:9px;padding:10px;border:1px solid var(--line);border-radius:10px;background:#ffffff04;font-size:11px}.leaderboard-position{font-weight:900;color:var(--accent)}.leaderboard-player{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.leaderboard-score{font-variant-numeric:tabular-nums;color:var(--gold)}
+
+/* v1.3 — expansão de pets, gemas e elo */
+.expansion-panel{margin-top:18px}.expansion-wallet{margin:12px 0 16px}.exp-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.exp-card{min-width:0;padding:14px;border:1px solid var(--line);border-radius:14px;background:#ffffff04}.exp-card h3{font-size:13px;margin:0 0 8px}.exp-card p{font-size:11px;line-height:1.6;color:var(--muted)}.pet-collection{display:grid;gap:8px}.pet-row{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 0;border-bottom:1px solid #ffffff12;font-size:10px}.pet-row span{min-width:0;overflow-wrap:anywhere}.pet-row button{flex-shrink:0;padding:6px 8px;font-size:10px}.expansion-subhead{margin-top:20px}.elo-row{display:flex;align-items:center;gap:12px;padding:12px;border:1px solid var(--line);border-radius:12px}.elo-row strong{color:var(--gold);font-size:16px}@media(max-width:700px){.exp-grid{grid-template-columns:1fr}.expansion-wallet{grid-template-columns:repeat(3,minmax(0,1fr))}.expansion-wallet .stat-box{padding:9px}.expansion-wallet .value{font-size:17px}.pet-row{align-items:flex-start}}
+
+/* v1.3.1 — correções de layout responsivo e textos cortados */
+*,*::before,*::after{box-sizing:border-box}
+html,body{max-width:100%;overflow-x:hidden}
+.app-shell,.game-container,.main-grid,.main-column,.side-column,.panel,.clicker-card,.expansion-panel,.exp-grid,.exp-card,.upgrade-card{min-width:0}
+h1,h2,h3,p,.label,.muted,.field-label,.stat-box,.exp-card,.upgrade-card{overflow-wrap:anywhere;word-break:normal}
+button,input,select{max-width:100%;min-width:0}
+button{white-space:normal;line-height:1.35}
+.value,.leaderboard-score,.upgrade-buy{overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.main-grid{align-items:start}
+.side-column{min-width:0}
+.pet-row{min-width:0;flex-wrap:wrap}
+.pet-row span{flex:1 1 130px}
+@media(max-width:700px){
+  .stats-panel{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .stat-box{min-width:0}
+  .value{font-size:clamp(15px,4.5vw,22px)}
+  .label{line-height:1.35;overflow-wrap:anywhere}
+  .expansion-wallet{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .expansion-wallet .value{font-size:clamp(13px,4vw,18px)}
+  .tabs{flex-wrap:wrap}
+  .tab{flex:1 1 auto}
+  .code-input-group{display:flex;flex-wrap:wrap}
+  .code-input-group input{flex:1 1 140px}
+  .code-input-group button{flex:0 1 auto}
+  .elo-row{flex-wrap:wrap}
+}
+
+/* v1.3.6 — carteira de gemas e feedback de interface */
+.gem-wallet-box{border-color:#6f63ff66;background:linear-gradient(145deg,#4533a522,#17234b66)}
+.gem-wallet-box #gems-display{color:#8fe9ff;text-shadow:0 0 16px #43d9ff55}
+.gem-wallet-box .small{display:block;margin-top:4px}
+.elo-row{min-height:54px}
+#elo-description{line-height:1.5;overflow-wrap:anywhere}
+.exp-card button{margin-top:8px}
+@media(max-width:620px){.gem-wallet-box .value{font-size:clamp(16px,5vw,23px)}.exp-card{padding:12px}}
